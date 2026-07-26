@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<!--
+  ═══════════════════════════════════════════════════════════════════════════════
+  CIRSE — PUERTA 2 (Marina) · Preview El Faro Digital
+  Misma casa, puerta propia. Paleta más profunda y sobria que el Club.
+  El amarrista no compra emoción: compra que no le pase nada a la lancha.
+  ═══════════════════════════════════════════════════════════════════════════════
+
+  ANTES DE MANDAR:
+  1. FOTOS: reemplazar cada .ph por <img src="URL-Cloudinary">.
+       hero-marina  · muelle con embarcaciones amarradas
+       serv-guarderia · sector de guardería en seco
+       serv-bajada    · rampa de bajada de lanchas
+  2. PRECIOS: todo "Desde $— REEMPLAZAR" sale de la llamada.
+  3. VALIDAR EN LA LLAMADA: si la marina factura por separado del club.
+     Si es otra sociedad → deja de ser una puerta y pasa a ser otro cliente.
+  4. og:url y canonical siguen en REEMPLAZAR (dominio caído, NXDOMAIN 25-jul-2026).
+-->
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marina Cirse — Amarras y guardería náutica en el Nahuel Huapi | Bariloche</title>
+<meta name="description" content="Amarras en muelle, guardería náutica, bajada de lanchas y escuela en Av. Bustillo Km 14.500, Bariloche. Consultá disponibilidad por eslora.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Marina Cirse — amarras y guardería náutica, Bariloche">
+<meta property="og:description" content="Amarras, guardería, bajada de lanchas y escuela náutica sobre el Nahuel Huapi.">
+<meta property="og:url" content="https://REEMPLAZAR-dominio.com/marina.html">
+<meta property="og:image" content="https://REEMPLAZAR-dominio.com/og-marina.jpg">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://REEMPLAZAR-dominio.com/marina.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%2312333D'/%3E%3Cpath d='M6 20c2.5-3 5-3 7.5 0s5 3 7.5 0 3.5-1.5 5 0' stroke='%23E8A33D' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='11' r='3.2' fill='%23F0E6D2'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700&family=Work+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --marina:#12333D; --marina-osc:#0A2028; --grafito:#2A3438; --agua:#2E8FA3;
+  --arena:#EFE9DE; --arena-osc:#D9CFBE; --destello:#E8A33D;
+  --carbon:#161B1E; --blanco:#FCFBF8;
+  --display:'Fraunces',serif; --texto:'Work Sans',sans-serif; --mono:'IBM Plex Mono',monospace;
+  --radio:6px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--texto);color:var(--carbon);background:var(--blanco);overflow-x:hidden;line-height:1.55}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.1}
+section{padding:5.2rem 0}
+@media(max-width:720px){section{padding:3.2rem 0}}
+.container{width:min(1180px,92%);margin-inline:auto}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--agua);display:flex;align-items:center;gap:.6rem;margin-bottom:.9rem}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--agua)}
+.titulo-seccion{font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:1rem;color:var(--marina-osc)}
+.sub-seccion{max-width:640px;color:#59635f;font-size:1.04rem;margin-bottom:2.4rem}
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-size:.92rem;padding:.95rem 1.7rem;border-radius:3px;border:1.5px solid transparent;cursor:pointer;transition:.25s;font-family:var(--texto)}
+.btn-primario{background:var(--destello);color:var(--marina-osc)}
+.btn-primario:hover{background:#f2b558;transform:translateY(-2px)}
+.btn-outline{border-color:var(--marina);color:var(--marina)}
+.btn-outline:hover{background:var(--marina);color:var(--blanco)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 4%;transition:.35s;background:linear-gradient(to bottom,rgba(10,32,40,.7),transparent)}
+header.scrolled{background:var(--blanco);box-shadow:0 2px 20px rgba(10,32,40,.13);padding:.7rem 4%}
+.logo{font-family:var(--display);font-size:1.25rem;font-weight:700;color:var(--blanco)}
+header.scrolled .logo{color:var(--marina-osc)}
+.logo span{color:var(--destello)}
+nav ul{display:flex;gap:1.9rem;align-items:center}
+nav a{color:var(--blanco);font-size:.9rem;font-weight:500;position:relative}
+header.scrolled nav a{color:var(--carbon)}
+nav a::after{content:"";position:absolute;bottom:-5px;left:0;width:0;height:1.5px;background:var(--destello);transition:.25s}
+nav a:hover::after{width:100%}
+.nav-club{border:1.4px solid var(--destello);padding:.45rem 1rem;border-radius:3px;color:var(--destello)!important}
+.nav-club::after{display:none}
+.menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.menu-toggle span{width:26px;height:2px;background:var(--blanco);transition:.3s}
+header.scrolled .menu-toggle span{background:var(--carbon)}
+@media(max-width:900px){
+  .menu-toggle{display:flex}
+  nav{position:fixed;inset:0 0 0 auto;width:min(78%,320px);background:var(--marina-osc);transform:translateX(100%);transition:.35s;display:flex;align-items:center;justify-content:center}
+  nav.abierto{transform:translateX(0)}
+  nav ul{flex-direction:column;gap:1.6rem}
+  nav a,header.scrolled nav a{color:var(--blanco);font-size:1.05rem}
+}
+
+/* ---------- HERO SOBRIO (sin rotación: el amarrista no viene por la postal) ---------- */
+.hero{position:relative;min-height:74svh;display:flex;align-items:center;color:var(--blanco);overflow:hidden}
+.hero .ph,.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,32,40,.92) 0%,rgba(10,32,40,.68) 50%,rgba(10,32,40,.42) 100%)}
+.hero-inner{position:relative;z-index:2;width:min(1180px,92%);margin-inline:auto;padding:7rem 0 3.4rem}
+.sello-coord{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;color:var(--destello);display:inline-flex;gap:.7rem;margin-bottom:1.3rem;border:1px solid rgba(232,163,61,.4);padding:.4rem .85rem;border-radius:2px}
+.hero h1{font-size:clamp(2.1rem,5vw,3.6rem);max-width:18ch;margin-bottom:1.1rem}
+.hero p.bajada{max-width:54ch;font-size:1.06rem;color:rgba(252,251,248,.84);margin-bottom:2rem}
+.hero-acciones{display:flex;gap:.8rem;flex-wrap:wrap}
+
+.resumen-wrap{background:var(--arena);padding:3rem 0}
+.resumen-directo{font-size:1.14rem;line-height:1.75;max-width:78ch;color:var(--marina-osc)}
+
+/* ---------- A1: SERVICIOS EN STICKY REVEAL ---------- */
+.serv-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:3rem;align-items:start}
+@media(max-width:920px){.serv-wrap{grid-template-columns:1fr;gap:1.6rem}}
+.serv-sticky{position:sticky;top:110px}
+@media(max-width:920px){.serv-sticky{position:static}}
+.serv-item{border-top:1px solid var(--arena-osc);padding:1.7rem 0;opacity:.42;transition:opacity .4s ease}
+.serv-item.visible{opacity:1}
+.serv-item:last-child{border-bottom:1px solid var(--arena-osc)}
+.serv-item h3{font-size:1.4rem;color:var(--marina-osc);margin-bottom:.4rem;display:flex;align-items:baseline;gap:.8rem}
+.serv-item .num{font-family:var(--mono);font-size:.74rem;color:var(--destello);letter-spacing:.12em}
+.serv-item p{font-size:.95rem;color:#59635f;max-width:56ch;margin-bottom:.8rem}
+.serv-precio{font-family:var(--display);font-size:1.28rem;color:var(--destello)}
+.serv-precio small{font-family:var(--texto);font-size:.78rem;color:#8b938f;display:block;font-weight:400}
+.serv-detalle{margin-top:.9rem}
+.serv-detalle li{font-size:.88rem;color:#4d5754;padding:.18rem 0 .18rem 1.25rem;position:relative}
+.serv-detalle li::before{content:"·";position:absolute;left:.35rem;color:var(--agua);font-weight:700;font-size:1.2rem;line-height:1}
+
+/* ---------- CONSULTA DE AMARRA ---------- */
+.consulta{background:linear-gradient(165deg,var(--marina) 0%,var(--marina-osc) 100%);color:var(--blanco)}
+.consulta .titulo-seccion{color:var(--blanco)}
+.consulta .eyebrow{color:var(--destello)}
+.consulta .eyebrow::before{background:var(--destello)}
+.consulta-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2.4rem;align-items:start}
+@media(max-width:880px){.consulta-grid{grid-template-columns:1fr}}
+.form-fila{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+@media(max-width:520px){.form-fila{grid-template-columns:1fr}}
+.form-campo{margin-top:.9rem}
+.form-campo label{display:block;font-size:.78rem;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;color:rgba(252,251,248,.6);margin-bottom:.35rem}
+.form-campo input,.form-campo select,.form-campo textarea{width:100%;background:rgba(252,251,248,.07);border:1.2px solid rgba(252,251,248,.2);border-radius:3px;padding:.72rem .85rem;color:var(--blanco);font-family:var(--texto);font-size:.92rem;transition:.2s}
+.form-campo input:focus,.form-campo select:focus,.form-campo textarea:focus{outline:none;border-color:var(--destello);background:rgba(252,251,248,.11)}
+.form-campo input::placeholder,.form-campo textarea::placeholder{color:rgba(252,251,248,.34)}
+.form-campo select option{background:var(--marina-osc);color:var(--blanco)}
+.form-campo.error input,.form-campo.error select{border-color:#e08d6f}
+.form-campo .pista{display:none;font-size:.76rem;color:#f0b39a;margin-top:.3rem}
+.form-campo.error .pista{display:block}
+.form-campo .ayuda{font-size:.76rem;color:rgba(252,251,248,.5);margin-top:.3rem;display:block}
+.panel-incluye{background:rgba(252,251,248,.06);border:1px solid rgba(252,251,248,.16);border-radius:var(--radio);padding:1.5rem;position:sticky;top:110px}
+@media(max-width:880px){.panel-incluye{position:static}}
+.panel-incluye h4{font-size:1.06rem;color:var(--destello);margin-bottom:.9rem}
+.panel-incluye li{font-size:.89rem;padding:.42rem 0 .42rem 1.4rem;position:relative;border-bottom:1px dashed rgba(252,251,248,.13);color:rgba(252,251,248,.86)}
+.panel-incluye li::before{content:"✓";position:absolute;left:0;color:var(--agua);font-weight:700}
+.panel-incluye .cierre{font-size:.82rem;color:rgba(252,251,248,.6);margin-top:1rem;line-height:1.55}
+.res-ok{display:none;font-size:.86rem;color:var(--destello);margin-top:.9rem;border-left:2px solid var(--destello);padding-left:.7rem}
+.res-ok.visible{display:block}
+
+/* ---------- EVENTOS NÁUTICOS ---------- */
+.ev-nauticos{background:var(--arena)}
+.ev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.3rem}
+.ev-card{background:var(--blanco);border:1px solid var(--arena-osc);border-radius:var(--radio);padding:1.5rem;transition:.25s}
+.ev-card:hover{border-color:var(--destello);transform:translateY(-3px)}
+.ev-card h3{font-size:1.14rem;color:var(--marina-osc);margin-bottom:.45rem}
+.ev-card p{font-size:.9rem;color:#59635f}
+
+/* ---------- FAQ ---------- */
+details{border-bottom:1px solid var(--arena-osc);padding:.95rem 0}
+summary{cursor:pointer;font-weight:600;font-size:.98rem;color:var(--marina-osc);list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--destello);font-size:1.2rem;line-height:1}
+details[open] summary::after{content:"−"}
+details p{font-size:.92rem;color:#59635f;margin-top:.6rem;max-width:62ch}
+
+/* ---------- CROSS-LINK AL CLUB ---------- */
+.cross{background:var(--grafito);color:var(--blanco);padding:3.4rem 0}
+.cross .container{display:flex;justify-content:space-between;align-items:center;gap:1.6rem;flex-wrap:wrap}
+.cross h3{font-size:1.6rem;max-width:22ch}
+.cross p{color:rgba(252,251,248,.7);font-size:.95rem;max-width:44ch;margin-top:.5rem}
+
+footer{background:var(--carbon);color:rgba(252,251,248,.72);padding:3.2rem 0 2rem;font-size:.9rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
+footer h4{color:var(--blanco);font-size:1rem;margin-bottom:.8rem}
+footer li{padding:.22rem 0}
+footer a:hover{color:var(--destello)}
+.foot-bottom{border-top:1px solid rgba(252,251,248,.12);padding-top:1.3rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;font-size:.78rem;color:rgba(252,251,248,.45)}
+
+.wa-flotante{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;z-index:999;box-shadow:0 8px 24px rgba(0,0,0,.24);transition:.25s}
+.wa-flotante:hover{transform:scale(1.07)}
+.wa-flotante svg{width:28px;height:28px;fill:#fff}
+
+.ph{background:linear-gradient(135deg,#0A2028 0%,#12333D 50%,#2E8FA3 100%);position:relative;display:flex;align-items:center;justify-content:center;min-height:180px}
+.ph::after{content:attr(data-foto);font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(252,251,248,.7);text-align:center;padding:0 1rem;line-height:1.6}
+
+.esc>*{opacity:0;transform:translateY(14px);animation:esc .7s ease forwards}
+.esc>*:nth-child(1){animation-delay:.05s}
+.esc>*:nth-child(2){animation-delay:.18s}
+.esc>*:nth-child(3){animation-delay:.31s}
+.esc>*:nth-child(4){animation-delay:.44s}
+@keyframes esc{to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){
+  .esc>*{opacity:1;transform:none;animation:none}
+  .serv-item{opacity:1}
+}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <a href="index.html" class="logo">Cirse <span>Marina</span></a>
+  <nav id="nav">
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#consulta">Consultar amarra</a></li>
+      <li><a href="#amarrista">Ser amarrista</a></li>
+      <li><a href="#eventos">Eventos náuticos</a></li>
+      <li><a href="#faq">Preguntas</a></li>
+      <li><a href="index.html" class="nav-club">El club</a></li>
+    </ul>
+  </nav>
+  <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
+</header>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="inicio">
+  <div class="ph" data-foto="hero-marina · muelle con embarcaciones amarradas"></div>
+  <div class="hero-inner esc">
+    <div class="sello-coord">41°05′S 71°27′O · Nahuel Huapi</div>
+    <h1>Tu embarcación, en el agua y bajo control.</h1>
+    <p class="bajada">Amarras en muelle, guardería en seco, bajada de lanchas y escuela náutica, sobre la costa del Nahuel Huapi en Bustillo Km 14.500. Temporada y anual.</p>
+    <div class="hero-acciones">
+      <a href="#consulta" class="btn btn-primario" data-cp-magnetico>Consultar disponibilidad</a>
+      <a href="#servicios" class="btn" style="border-color:rgba(252,251,248,.55);color:var(--blanco)">Ver servicios y precios</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ RESUMEN DIRECTO ══════════ -->
+<div class="resumen-wrap">
+  <div class="container">
+    <p class="resumen-directo">
+      La <b>Marina de Cirse</b> funciona sobre la costa del lago Nahuel Huapi, en Av. Bustillo Km 14.500, San Carlos de Bariloche. Ofrece <b>amarras en muelle</b>, <b>guardería náutica en seco</b>, <b>rampa de bajada de lanchas</b> y <b>escuela náutica</b>, con contratos por temporada o anuales. Ser amarrista incluye el acceso al club, al restaurante y a la costa.
+    </p>
+  </div>
+</div>
+
+<!-- ══════════ SERVICIOS (A1 sticky reveal) ══════════ -->
+<section id="servicios">
+  <div class="container">
+    <div class="serv-wrap">
+      <div class="serv-sticky">
+        <div class="eyebrow">Servicios de la marina</div>
+        <h2 class="titulo-seccion">Cuatro formas de usar el agua</h2>
+        <p class="sub-seccion">Cada servicio con su precio de referencia. Lo que define todo es la eslora, así que ese es el primer dato que te vamos a pedir.</p>
+        <a href="#consulta" class="btn btn-outline" data-cp-magnetico>Consultar por mi embarcación</a>
+      </div>
+
+      <div>
+        <article class="serv-item" data-cp-reveal>
+          <h3><span class="num">01</span> Amarra en muelle</h3>
+          <p>Tu embarcación en el agua, lista para salir. Asignación por eslora y calado, con acceso directo desde el predio.</p>
+          <span class="serv-precio">Desde $— <small>REEMPLAZAR · por temporada, según eslora</small></span>
+          <ul class="serv-detalle">
+            <li>Modalidad por temporada o anual</li>
+            <li>Acceso al predio y a la costa incluido</li>
+            <li>REEMPLAZAR: rango de esloras que se aceptan</li>
+          </ul>
+        </article>
+
+        <article class="serv-item" data-cp-reveal>
+          <h3><span class="num">02</span> Guardería náutica</h3>
+          <p>Guardado en seco para fuera de temporada o para quien no navega todas las semanas. Menos mantenimiento, menos desgaste.</p>
+          <span class="serv-precio">Desde $— <small>REEMPLAZAR · por mes o temporada</small></span>
+          <ul class="serv-detalle">
+            <li>Guardado en predio cerrado</li>
+            <li>REEMPLAZAR: si incluye botadura y sacada</li>
+            <li>REEMPLAZAR: seguro exigido o no</li>
+          </ul>
+        </article>
+
+        <article class="serv-item" data-cp-reveal>
+          <h3><span class="num">03</span> Bajada de lanchas</h3>
+          <p>Rampa habilitada para quien trae la embarcación desde afuera. Uso por día, sin necesidad de ser amarrista.</p>
+          <span class="serv-precio">Desde $— <small>REEMPLAZAR · por bajada</small></span>
+          <ul class="serv-detalle">
+            <li>REEMPLAZAR: horarios de uso de la rampa</li>
+            <li>REEMPLAZAR: si incluye estacionamiento del tráiler</li>
+          </ul>
+        </article>
+
+        <article class="serv-item" data-cp-reveal>
+          <h3><span class="num">04</span> Escuela náutica</h3>
+          <p>Para arrancar de cero o para que los chicos aprendan en el lago. Clases y salidas guiadas.</p>
+          <span class="serv-precio">Desde $— <small>REEMPLAZAR · por clase o por curso</small></span>
+          <ul class="serv-detalle">
+            <li>REEMPLAZAR: edades y niveles</li>
+            <li>REEMPLAZAR: si se entrega certificación</li>
+            <li>REEMPLAZAR: temporada en que funciona</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONSULTA DE AMARRA ══════════ -->
+<section class="consulta" id="consulta">
+  <div class="container">
+    <div class="eyebrow">Disponibilidad</div>
+    <h2 class="titulo-seccion">Contanos qué embarcación tenés</h2>
+    <p class="sub-seccion" style="color:rgba(252,251,248,.72)">Con la eslora y el tipo ya sabemos qué lugar te podemos ofrecer y a qué precio. Te respondemos por WhatsApp.</p>
+
+    <div class="consulta-grid">
+      <div>
+        <div class="form-fila">
+          <div class="form-campo" id="c-eslora">
+            <label for="mEslora">Eslora</label>
+            <input type="number" id="mEslora" min="1" step="0.1" placeholder="Ej: 6,5">
+            <span class="ayuda">En metros. Es el dato que define lugar y precio.</span>
+            <span class="pista">Sin la eslora no podemos decirte si tenemos lugar.</span>
+          </div>
+          <div class="form-campo" id="c-tipo">
+            <label for="mTipo">Tipo de embarcación</label>
+            <select id="mTipo">
+              <option value="">Elegí una opción</option>
+              <option>Lancha</option>
+              <option>Velero</option>
+              <option>Semirrígido</option>
+              <option>Crucero</option>
+              <option>Otra</option>
+            </select>
+            <span class="pista">Decinos qué tipo de embarcación es.</span>
+          </div>
+        </div>
+
+        <div class="form-fila">
+          <div class="form-campo">
+            <label for="mServicio">Servicio que buscás</label>
+            <select id="mServicio">
+              <option>Amarra en muelle</option>
+              <option>Guardería náutica</option>
+              <option>Bajada de lanchas</option>
+              <option>Escuela náutica</option>
+            </select>
+          </div>
+          <div class="form-campo">
+            <label for="mModalidad">Modalidad</label>
+            <select id="mModalidad">
+              <option>Temporada</option>
+              <option>Anual</option>
+              <option>Por día</option>
+              <option>Todavía no sé</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-fila">
+          <div class="form-campo" id="c-nombre"><label for="mNombre">Nombre</label><input type="text" id="mNombre" placeholder="Tu nombre"><span class="pista">Necesitamos tu nombre para responderte.</span></div>
+          <div class="form-campo" id="c-tel"><label for="mTel">Teléfono / WhatsApp</label><input type="tel" id="mTel" placeholder="+54 9 ..."><span class="pista">Sin teléfono no podemos contestarte.</span></div>
+        </div>
+
+        <div class="form-campo"><label for="mComentario">Algo más que debamos saber (opcional)</label><textarea rows="3" id="mComentario" placeholder="Calado, tráiler propio, desde cuándo la necesitás..."></textarea></div>
+
+        <div class="res-ok" id="mOk" role="status">Listo — se abrió WhatsApp con tu consulta cargada.</div>
+        <a href="#" id="btnMarina" class="btn btn-primario" style="margin-top:1.2rem" data-cp-magnetico>Enviar consulta</a>
+      </div>
+
+      <aside class="panel-incluye" id="amarrista">
+        <h4>Ser amarrista en Cirse</h4>
+        <ul>
+          <li>Acceso al predio para vos y tu familia</li>
+          <li>Restaurante y gastronomía a la orilla del lago</li>
+          <li>Uso de la costa, el muelle y las instalaciones</li>
+          <li>REEMPLAZAR: cantidad de invitados permitidos</li>
+          <li>REEMPLAZAR: si hay tarifa preferencial en alojamiento</li>
+          <li>REEMPLAZAR: vigilancia / seguridad del sector</li>
+        </ul>
+        <p class="cierre">La amarra no es solo un lugar donde dejar la lancha. Es la puerta de entrada al club — y por eso conviene tener las dos cosas en el mismo lugar.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EVENTOS NÁUTICOS ══════════ -->
+<section class="ev-nauticos" id="eventos">
+  <div class="container">
+    <div class="eyebrow">Eventos náuticos</div>
+    <h2 class="titulo-seccion">El lago también se compite y se enseña</h2>
+    <p class="sub-seccion">Regatas, escuela y salidas guiadas. Si organizás algo sobre el agua, el muelle y la rampa están disponibles.</p>
+    <div class="ev-grid">
+      <article class="ev-card">
+        <h3>Regatas</h3>
+        <p>Muelle, rampa y logística en tierra para competencias. REEMPLAZAR: calendario o temporada.</p>
+      </article>
+      <article class="ev-card">
+        <h3>Escuela y clínicas</h3>
+        <p>Formación en el lago para chicos y adultos. REEMPLAZAR: modalidad y niveles.</p>
+      </article>
+      <article class="ev-card">
+        <h3>Salidas guiadas</h3>
+        <p>Navegación acompañada por el Nahuel Huapi. REEMPLAZAR: duración y cupos.</p>
+      </article>
+      <article class="ev-card">
+        <h3>Eventos de empresa</h3>
+        <p>Jornadas que combinan náutica, gastronomía y salón. Se coordinan desde el club.</p>
+      </article>
+    </div>
+    <a href="index.html#eventos" class="btn btn-outline" style="margin-top:1.8rem" data-cp-magnetico>Consultar por un evento</a>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section id="faq">
+  <div class="container" style="max-width:760px">
+    <div class="eyebrow">Preguntas frecuentes</div>
+    <h2 class="titulo-seccion">Lo que más nos consultan</h2>
+    <details><summary>¿Qué eslora máxima aceptan?</summary><p>REEMPLAZAR con el rango real de esloras y calados que admite el muelle.</p></details>
+    <details><summary>¿Hace falta seguro para la embarcación?</summary><p>REEMPLAZAR: si es requisito, qué cobertura mínima se pide y si lo verifican al ingreso.</p></details>
+    <details><summary>¿Cuándo empieza y termina la temporada?</summary><p>REEMPLAZAR: meses de temporada y qué pasa con la embarcación fuera de ella.</p></details>
+    <details><summary>¿Puedo usar la rampa sin ser amarrista?</summary><p>REEMPLAZAR: si la bajada por día está abierta al público y en qué horarios.</p></details>
+    <details><summary>¿Hay vigilancia en el sector de amarras?</summary><p>REEMPLAZAR: qué tipo de seguridad hay y en qué horarios.</p></details>
+    <details><summary>¿Cómo se paga la temporada?</summary><p>REEMPLAZAR: medios de pago, si se puede en cuotas y qué se pide por adelantado.</p></details>
+  </div>
+</section>
+
+<!-- ══════════ CROSS-LINK AL CLUB ══════════ -->
+<div class="cross">
+  <div class="container">
+    <div>
+      <h3>Después de navegar, el club está a treinta metros.</h3>
+      <p>Gastronomía a la orilla del lago, camping, cabañas y glamping en el mismo predio.</p>
+    </div>
+    <a href="index.html" class="btn btn-primario" data-cp-magnetico>Conocer el club →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Cirse — Marina</h4>
+        <p style="max-width:38ch">Amarras, guardería náutica, bajada de lanchas y escuela sobre la costa del Nahuel Huapi.</p>
+        <p style="margin-top:.9rem;font-size:.84rem">Av. Ezequiel Bustillo Km 14.500<br>San Carlos de Bariloche, Río Negro</p>
+      </div>
+      <div>
+        <h4>Náutica</h4>
+        <ul>
+          <li><a href="#servicios">Servicios y precios</a></li>
+          <li><a href="#consulta">Consultar amarra</a></li>
+          <li><a href="#amarrista">Ser amarrista</a></li>
+          <li><a href="#eventos">Eventos náuticos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>El club</h4>
+        <ul>
+          <li><a href="index.html#alojamiento">Alojamiento</a></li>
+          <li><a href="index.html#gastronomia">Gastronomía</a></li>
+          <li><a href="index.html#reservas">Reservá</a></li>
+          <li style="margin-top:.9rem"><a href="#" data-wa><b data-wa-num>+54 9 ...</b></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="anio"></span> Cirse Club de Lago</span>
+      <span>Sitio desarrollado por El Faro Digital</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" data-wa class="wa-flotante" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<!--
+  JSON-LD: la marina NO es un LodgingBusiness — no aloja personas.
+  La tabla de schema de BIBLIOTECA_INTERACCIONES_PREMIUM cubre 6 verticales y
+  ninguna es marina náutica. Decisión nueva: LocalBusiness + makesOffer.
+  → Va a la Bitácora de Aprendizajes como caso nuevo.
+-->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "additionalType":"https://www.wikidata.org/wiki/Q1131296",
+  "name":"Marina Cirse",
+  "description":"Amarras en muelle, guardería náutica, bajada de lanchas y escuela náutica sobre el lago Nahuel Huapi, Bariloche.",
+  "address":{"@type":"PostalAddress","streetAddress":"Av. Ezequiel Bustillo Km 14.500","addressLocality":"San Carlos de Bariloche","addressRegion":"Río Negro","addressCountry":"AR"},
+  "geo":{"@type":"GeoCoordinates","latitude":"-41.093","longitude":"-71.455"},
+  "telephone":"REEMPLAZAR",
+  "url":"https://REEMPLAZAR-dominio.com/marina.html",
+  "parentOrganization":{"@type":"Organization","name":"Cirse Club de Lago"},
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Amarra en muelle"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Guardería náutica"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Bajada de lanchas"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Escuela náutica"}}
+  ]
+}
+</script>
+
+<script>
+const CONFIG = {
+  nombreNegocio:'Marina Cirse',
+  whatsapp:'5492944669898',
+  whatsappVisible:'+54 9 2944 66-9898',
+  locale:'es-AR'
+};
+const REDUCE = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+const HOVER = !!(window.matchMedia && window.matchMedia('(hover:hover)').matches);
+const waUrl = t => `https://wa.me/${CONFIG.whatsapp}?text=${t}`;
+document.getElementById('anio').textContent = new Date().getFullYear();
+
+/* ---------- HEADER + MENÚ ---------- */
+const header = document.getElementById('header');
+window.addEventListener('scroll', ()=> header.classList.toggle('scrolled', window.scrollY > 60));
+const nav = document.getElementById('nav');
+document.getElementById('menuToggle').addEventListener('click', ()=> nav.classList.toggle('abierto'));
+document.querySelectorAll('#nav a').forEach(a=> a.addEventListener('click', ()=> nav.classList.remove('abierto')));
+
+/* ---------- A1: STICKY REVEAL ---------- */
+const items = document.querySelectorAll('[data-cp-reveal]');
+if('IntersectionObserver' in window && !REDUCE){
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(en=> en.target.classList.toggle('visible', en.isIntersecting));
+  },{rootMargin:'-38% 0px -38% 0px'});
+  items.forEach(i=> obs.observe(i));
+} else {
+  items.forEach(i=> i.classList.add('visible'));
+}
+
+/* ---------- E1: VALIDACIÓN QUE ENSEÑA ---------- */
+function validar(wrapId, inputId){
+  const wrap = document.getElementById(wrapId);
+  const val = document.getElementById(inputId).value.trim();
+  wrap.classList.toggle('error', !val);
+  return !!val;
+}
+['mEslora','mTipo','mNombre','mTel'].forEach(id=>{
+  const el = document.getElementById(id);
+  el.addEventListener('input', ()=> el.closest('.form-campo').classList.remove('error'));
+  el.addEventListener('change', ()=> el.closest('.form-campo').classList.remove('error'));
+});
+
+/* ---------- E2: CONFIRMACIÓN CON PESO ---------- */
+document.getElementById('btnMarina').addEventListener('click', e=>{
+  e.preventDefault();
+  const ok = [
+    validar('c-eslora','mEslora'),
+    validar('c-tipo','mTipo'),
+    validar('c-nombre','mNombre'),
+    validar('c-tel','mTel')
+  ].every(Boolean);
+  if(!ok){
+    document.querySelector('.form-campo.error').scrollIntoView({behavior: REDUCE?'auto':'smooth', block:'center'});
+    return;
+  }
+  const v = id => document.getElementById(id).value.trim();
+  const msg = encodeURIComponent(
+    `Hola! Consulto por la Marina de Cirse\n\n` +
+    `Servicio: ${v('mServicio')}\n` +
+    `Modalidad: ${v('mModalidad')}\n` +
+    `Eslora: ${v('mEslora')} m\n` +
+    `Tipo: ${v('mTipo')}\n` +
+    `Nombre: ${v('mNombre')}\n` +
+    `Teléfono: ${v('mTel')}\n` +
+    `Comentario: ${v('mComentario') || 'Sin comentarios'}`
+  );
+  document.getElementById('mOk').classList.add('visible');
+  window.open(waUrl(msg), '_blank');
+});
+
+/* ---------- B1: BOTÓN MAGNÉTICO ---------- */
+if(!REDUCE && HOVER){
+  document.querySelectorAll('[data-cp-magnetico]').forEach(el=>{
+    el.addEventListener('mousemove', ev=>{
+      const r = el.getBoundingClientRect();
+      el.style.transform = `translate(${(ev.clientX-r.left-r.width/2)*.16}px,${(ev.clientY-r.top-r.height/2)*.16}px)`;
+    });
+    el.addEventListener('mouseleave', ()=> el.style.transform = '');
+  });
+}
+
+/* ---------- WHATSAPP CENTRALIZADO ---------- */
+document.querySelectorAll('[data-wa]').forEach(a=>{
+  a.href = waUrl(encodeURIComponent(`Hola! Quiero consultar por la Marina de Cirse.`));
+  a.target='_blank'; a.rel='noopener';
+});
+document.querySelectorAll('[data-wa-num]').forEach(el=> el.textContent = CONFIG.whatsappVisible);
+</script>
+</body>
+</html>
